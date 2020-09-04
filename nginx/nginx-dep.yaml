@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: nginx-dep
+  name: nginx-dep
+  namespace: dev-ns
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-dep
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: nginx-dep
+    spec:
+      containers:
+      - image: ukpillai89/mynginx:v1
+        name: nginx
+        resources: {}
+status: {}
