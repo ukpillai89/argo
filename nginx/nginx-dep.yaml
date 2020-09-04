@@ -4,7 +4,7 @@ metadata:
   labels:
     app: nginx-dep
   name: nginx-dep
-  namespace: dev-ns
+  namespace: my-workspace
 spec:
   replicas: 1
   selector:
