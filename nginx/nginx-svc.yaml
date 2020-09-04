@@ -4,7 +4,7 @@ metadata:
   labels:
     app: nginx-svc
   name: nginx-svc
-  namespace: dev-ns
+  namespace: my-workspace
 spec:
   ports:
   - name: nginx-http
