@@ -10,7 +10,7 @@ spec:
     source:
         repoURL: https://github.com/ukpillai89/argo.git
         targetRevision: HEAD
-        path: 
+        path: nginx
     destination:
         server: https://kubernetes.default.svc
         namespace: dev-ns
